@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+    font-family: "Work Sans", sans-serif;
+}
+
+.container-wrap {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.headline {
+    width: 50%;
+}
+
+.headline-intro {
+    padding-left: 2rem;
+}
+
+.headline-intro h1 {
+    font-weight: 800;
+}
+
+.logo {
+    padding-top: 14rem;
+}
+
+.introduction {
+    width: 50%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction .txt-type {
+    font-size: 2.6rem;
+    font-weight: bold;
+    border-right: 4px solid #848383;
+}
+
+.pointer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+.main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.hello-section {
+    width: 30%;
+}
+.main .hello-section h3 {
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+.hello-section .shapes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    font-size: 100px;
+}
+
+.about-section {
+    width: 70%;
+    padding: 2rem;
+    box-shadow: 0 4px 18px -12px rgba(0, 0, 0, 0.75);
+    background: #fff;
+    border-radius: 15px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.about-section .icon-img {
+    position: absolute;
+    top: -26px;
+    right: 25px;
+    animation: spin 20s linear infinite;
+}
+
+.about-section p {
+    color: #313035;
+    font-size: 1.4rem;
+}
+
+.container-fluid {
+    padding: 0;
+    margin-top: 3rem;
+}
+.container-fluid h2 {
+    margin-bottom: 4rem;
+    font-weight: 600;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(30%);
+}
+.project-headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-headline h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.jumbotron {
+    background: #202325;
+    color: #efeffa;
+    font-weight: 500;
+    padding: 6rem;
+    border-radius: 0;
+}
+.jumbotron h3 {
+    margin-bottom: 2rem;
+}
+
+.jumbotron .fab,
+.icon {
+    color: #00ff9c;
+    padding-left: 1rem;
+    cursor: pointer;
+    font-size: 36px;
+}
+footer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.infos .info-1 {
+    font-weight: 500;
+    color: #252525;
+}
+
+.infos a {
+    color: #252525;
+    font-size: 25px;
+    padding: 0 1rem;
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .container-wrap {
+        height: 80vh;
+    }
+    header {
+        flex-direction: column-reverse;
+    }
+    .pointer {
+        display: none;
+    }
+    .headline {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .headline-intro {
+        padding: 0;
+    }
+    .headline-intro h1 {
+        font-size: 1.7rem;
+    }
+    .logo {
+        padding-top: 4rem;
+        text-align: center;
+    }
+    .logo img {
+        width: 100px;
+    }
+    .introduction {
+        background: none;
+        color: #000;
+        width: 100%;
+    }
+    .introduction .txt-type {
+        font-size: 1rem;
+        border-right: 4px solid #848383;
+    }
+
+    .main {
+        width: 100%;
+        padding: 1rem;
+        color: #fff;
+        background: #000;
+        flex-direction: column;
+    }
+    .main .hello-section {
+        width: 100%;
+    }
+    .main .hello-section h3 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .hello-section .shapes {
+        transform: rotate(-90deg);
+        font-size: 36px;
+        flex-direction: row-reverse;
+    }
+    .about-section {
+        width: 100%;
+        padding: 0;
+        background: none;
+    }
+    .about-section p {
+        color: #fff;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    .container-fluid h2 {
+        margin: 3rem;
+    }
+    .project-headline {
+        display: none;
+    }
+    .project-img img {
+        filter: brightness(70%);
+    }
+    .jumbotron {
+        padding: 2rem;
+    }
+    .jumbotron h3 {
+        font-size: 1.5rem;
+    }
+    .jumbotron .fab,
+    .icon {
+        font-size: 28px;
+        cursor: pointer;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .infos {
+        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .headline-intro h1 {
+        font-size: 2rem;
+    }
+    .introduction .txt-type {
+        font-size: 1.5rem;
+    }
+    .pointer {
+        width: 200px;
+        height: 200px;
+    }
+    .main {
+        width: 100%;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .main .hello-section {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .main .hello-section h3 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .hello-section .shapes {
+        transform: rotate(-90deg);
+        font-size: 60px;
+        flex-direction: row-reverse;
+    }
+    .about-section {
+        width: 100%;
+    }
+    .about-section p {
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+    .project-headline h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .introduction .txt-type {
+        font-size: 2rem;
+    }
+    .main {
+        width: 100%;
+        padding: 3rem;
+    }
+    .hello-section {
+        width: 43%;
+    }
+    .about-section {
+        width: 90%;
+    }
+}
